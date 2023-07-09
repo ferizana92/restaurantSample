@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/095f0a2654.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Coffee Web Page</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <header class="sticky">
+      <div class="header-container">
+        <a href="index.html" class="logo-img">
+          <img src="./images/logo.png" alt="logo" class="logo"
+        /></a>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#products">Products</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+          <a href="#blogs">Blogs</a>
+        </nav>
+        <div class="icons">
+          <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+          <i class="fa-solid fa-card-shopping" id="card-btn"></i>
+          <div id="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="search-form">
+          <input type="search" id="search-box" placeholder="Search here..." />
+          <label
+            for="search-input"
+            class="fa-solid fa-magnifying-glass"
+          ></label>
+        </div>
+        <div class="card-container">
+          <div class="card-items-container"></div>
+          <div class="total">Total: $<span class="total-price">0</span></div>
+          <button class="checkout-btn">checkout now</button>
+        </div>
+      </div>
+    </header>
+    <!--end of navbar-->
+    <!--home-->
+
+    <section id="home" class="home">
+      <div class="home-container">
+        <h1 class="title">fresh coffee in the&nbsp;morning</h1>
+        <div class="description">
+          A simple restaurant website offers a quality user experience on
+          mobile, along with integration of a location tool such as Google maps,
+          plus directions. Whether potential customers are visiting your website
+          on desktop, tablet or smartphone, accessing your menu — or a sample
+          menu — should be child’s play.
+        </div>
+        <button class="home-btn">get yours now</button>
+      </div>
+    </section>
+    <!--end of home-->
+
+    <!--about us-->
+    <section id="about" class="about-us">
+      <h2 class="about-title">About&nbsp;<span>us</span></h2>
+      <div class="about-card">
+        <div class="about-img">
+          <img src="./images/restaurant.jpg" alt="about-img" />
+        </div>
+        <div class="about-description">
+          <h3>What Makes Our Food Special?</h3>
+          <p>
+            A specialty food is a food that is typically considered as a "unique
+            and high-value food item made in small quantities from high-quality
+            ingredients". Consumers typically pay higher prices for specialty
+            foods, and may perceive them as having various benefits compared to
+            non-specialty foods.
+          </p>
+          <button class="about-btn">learn more</button>
+        </div>
+      </div>
+    </section>
+
+    <!--end of about us-->
+
+    <!--Our Menu-->
+
+    <section id="menu" class="menu">
+      <h2 class="menu-title">our&nbsp;<span>menu</span></h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img
+            src="./images/chicken.jpg"
+            alt="item1"
+            class="item1 item-image"
+          />
+          <p class="item-name">Macchiato</p>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+          <button class="menu-btn add-to-card">add to card</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="./images/salad.jpg" alt="item2" class="item2 item-image" />
+          <p class="item-name">Espresso</p>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+          <button class="menu-btn add-to-card">add to card</button>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="./images/potatosalad.jpg"
+            alt="item3"
+            class="item3 item-image"
+          />
+          <p class="item-name">Americano</p>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+          <button class="menu-btn add-to-card">add to card</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="./images/food2.jpg" alt="item4" class="item4 item-image" />
+          <p class="item-name">Double Espresso</p>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+          <button class="menu-btn add-to-card">add to card</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="./images/food.jpg" alt="item5" class="item5 item-image" />
+          <p class="item-name">Black Eye</p>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+          <button class="menu-btn add-to-card">add to card</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="./images/salad.jpg" alt="item6" class="item6 item-image" />
+          <p class="item-name">Red Eye</p>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+          <button class="menu-btn add-to-card">add to card</button>
+        </div>
+      </div>
+    </section>
+
+    <!--end of Our Menu-->
+    <!--Our Products-->
+
+    <section id="products" class="products">
+      <h2 class="products-title">Our&nbsp;<span>Products</span></h2>
+      <div class="products-container">
+        <div class="product-item">
+          <div class="products-icon">
+            <i class="fa-solid fa-card-shopping add-product-to-card"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <img
+            src="./images/chicken2.jpg"
+            alt="product-1"
+            class="product1 product-image"
+          />
+          <p class="product-name">Nicaragua Beans</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+        </div>
+
+        <div class="product-item">
+          <div class="products-icon">
+            <i class="fa-solid fa-card-shopping add-product-to-card"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <img
+            src="./images/potatosalad.jpg"
+            alt="product-2"
+            class="product2 product-image"
+          />
+          <p class="product-name">Columbia Beans</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+        </div>
+
+        <div class="product-item">
+          <div class="products-icon">
+            <i class="fa-solid fa-card-shopping add-product-to-card"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <img
+            src="./images/burger.jpg"
+            alt="product-3"
+            class="product3 product-image"
+          />
+          <p class="product-name">Peru Beans</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="price">$15.99&nbsp;<span>20.99</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!--end of Our Products-->
+    <!--Review-->
+
+    <section id="review" class="review">
+      <h2 class="review-title">customer's&nbsp;<span>review</span></h2>
+      <div class="review-container">
+        <div class="review-item">
+          <img src="./images/burger2.jpg" alt="quote" class="quote" />
+          <p>
+            First time in (RN) and YOU have to go! It’s the cutest little spot
+            with amazing food. The (FN) is to die for. IT WAS FIRE!! The service
+            we received was so amazing and we will definitely be back again.
+            They made us feel welcomed and gave us an amazing experience.
+          </p>
+          <img src="./images/chicken.jpg" alt="pic-1" class="profile" />
+          <p class="names">Mosh Osburn</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="review-item">
+          <img src="./images/chicken2.jpg" alt="quote" class="quote" />
+          <p>
+            This cozy restaurant has left the best impressions! Hospitable
+            hosts, delicious dishes, beautiful presentation, wide wine list and
+            wonderful dessert. I recommend to everyone! I would like to come
+            back here again and again.
+          </p>
+          <img src="./images/food.jpg" alt="pic-2" class="profile" />
+          <p class="names">Becky Baker</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="review-item">
+          <img src="./images/food2.jpg" alt="quote" class="quote" />
+          <p>
+            Excellent food. Menu is extensive and seasonal to a particularly
+            high standard. Definitely fine dining. It can be expensive but worth
+            it and they do different deals on different nights so it’s worth
+            checking them out before you book. Highly recommended.
+          </p>
+          <img src="./images/salad.2.jpg" alt="pic-3.png" class="profile" />
+          <p class="names">John Deo</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact us-->
+
+    <section id="contact" class="contact-us">
+      <h2 class="contact-title">contact&nbsp;<span>us</span></h2>
+      <div class="contact-card">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8941.457151399169!2d-3.1551569173352703!3d55.92572246779182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b9de81aa096d%3A0xfd510b5051f8c0dc!2sBridgend%20Farmhouse%20Cafe!5e0!3m2!1sen!2ssg!4v1681315741989!5m2!1sen!2ssg"
+          class="map-tile"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="form">
+          <p class="form-title">Get in touch</p>
+          <form action="/index.html">
+            <div class="input-container">
+              <i class="fa fa-user"></i>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="name"
+                name="customer-name"
+              />
+            </div>
+            <div class="input-container">
+              <i class="fa fa-envelope"></i>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="email"
+                name="email-address"
+              />
+            </div>
+            <div class="input-container">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="number"
+                name="customer-number"
+              />
+            </div>
+          </form>
+          <button class="contact-btn">contact now</button>
+        </div>
+      </div>
+    </section>
+
+    <!--end of contact us-->
+    <!--blogs-->
+
+    <section id="blogs" class="blogs">
+      <h2 class="blogs-title">our&nbsp;<span>Blogs</span></h2>
+      <div class="blogs-container">
+        <div class="blog-item">
+          <div class="image-blog">
+            <img src="./images/burger2.jpg" alt="blog-1" />
+          </div>
+          <p class="blog-name">Tasty and refreshing coffee</p>
+          <p class="blog-author">by admin/21st May, 2021</p>
+          <p class="blog-description">
+            It can be expensive but worth it and they do different deals on
+            different nights
+          </p>
+          <button class="blog-btn">read more</button>
+        </div>
+
+        <div class="blog-item">
+          <div class="image-blog">
+            <img src="./images/food.jpg" alt="blog-2" />
+          </div>
+          <p class="blog-name">Tasty and refreshing coffee</p>
+          <p class="blog-author">by admin/21st May, 2021</p>
+          <p class="blog-description">here we can add some information</p>
+          <button class="blog-btn">read more</button>
+        </div>
+
+        <div class="blog-item">
+          <div class="image-blog">
+            <img src="./images/food2.jpg" alt="blog-3" />
+          </div>
+          <p class="blog-name">Tasty and refreshing coffee</p>
+          <p class="blog-author">by admin/21st May, 2023</p>
+          <p class="blog-description"></p>
+          <button class="blog-btn">read more</button>
+        </div>
+      </div>
+    </section>
+
+    <!--end of blogs-->
+    <!--footer-->
+
+    <footer>
+      <div class="media">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-pinterest"></i>
+      </div>
+      <div class="links">
+        <a href="#home" class="bc-button">home</a>
+        <a href="#about" class="bc-button">about</a>
+        <a href="#menu" class="bc-button">menu</a>
+        <a href="#products" class="bc-button">products</a>
+        <a href="#review" class="bc-button">review</a>
+        <a href="#contact" class="bc-button">contact</a>
+        <a href="#blogs" class="bc-button">blogs</a>
+      </div>
+      <p class="copy-right">Developed By&nbsp;<span>Ferizana92</span></p>
+    </footer>
+
+    <!--end of footer-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
